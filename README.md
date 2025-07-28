@@ -16,7 +16,7 @@
 
 ---
 ## 🧰 Overview
-This project demonstrates how to package and deploy a simple Flask web app using Docker, Helm, and Kubernetes. It supports NFS volume mounting, namespace isolation, and NodePort service exposure.
+This project demonstrates how to package and deploy a simple Flask web app using Docker, Helm, and Kubernetes. It features namespace isolation and exposes the app internally using a ClusterIP service for secure in-cluster access. To access the app externally, port forwarding or service type changes are required.
 
 ---
 
