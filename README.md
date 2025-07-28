@@ -123,6 +123,8 @@ curl http://<your-node-ip>:30080
 - Kubernetes cluster (e.g., K3s, Minikube)
 - Helm v3+
 - A GitHub Personal Access Token with read & write:packages scope for accessing the chart from GitHub Container Registry
+- This deploy script is tested only on Debian-based systems
+- The script must be run with sudo/root permissions
 
 ---
 
