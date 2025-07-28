@@ -94,22 +94,6 @@ chmod +x scripts/deploy.sh
 
 ## 🌐 Access the App
 
-After deployment, open in browser:
-
-```
-http://<your-node-ip>:30080
-```
-
-Or port-forward (if using ClusterIP):
-
-```bash
-kubectl port-forward -n flask svc/flask-app 5000:80
-```
-
----
-
-## 🔍 Demo
-
 ```bash
 curl http://localhost:5000  
 # → Hello from Flask with Helm!
