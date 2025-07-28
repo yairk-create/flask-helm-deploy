@@ -4,6 +4,11 @@ This project demonstrates how to package and deploy a simple Flask web app using
 
 ---
 
+
+![Helm Deployment](https://raw.githubusercontent.com/yairk-create/flask-helm-deploy/main/docs/images.png)
+
+
+
 ## 📁 Project Structure
 
 ```
@@ -27,7 +32,7 @@ flask-helm/
 ```
 
 
-![Helm Deployment](https://raw.githubusercontent.com/yairk-create/flask-helm-deploy/main/docs/images.png)
+
 
 
 ---
