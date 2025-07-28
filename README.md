@@ -118,13 +118,6 @@ MIT License — feel free to use and adapt.
 
 ---
 
-## 🤝 Contributing
-
-1. Fork this repo
-2. Create a new branch (`git checkout -b feature-name`)
-3. Commit your changes
-4. Push and create a Pull Request
-
 ---
 
 ## 🔗 Credits
