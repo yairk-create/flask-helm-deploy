@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 2
 
 image:
   repository: <your-dockerhub-username>/flask-app
@@ -8,3 +8,11 @@ image:
 service:
   type: ClusterIP
   port: 80
+
+resources:
+  requests:
+    cpu: "15m"
+    memory: "750Mi"
+  limits:
+    cpu: "15m"
+    memory: "750i"
