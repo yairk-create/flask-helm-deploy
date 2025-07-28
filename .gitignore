@@ -11,3 +11,12 @@ __pycache__/
 .idea/
 *.swp
 venv/
+.gitignore
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+*.bak
+*.tmp
+*.orig      
