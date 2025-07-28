@@ -71,10 +71,13 @@ CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "main:app"]
 
 ## 🎯 Helm Chart Highlights
 
-- Deploys to namespace `flask`
-- Exposes the app via `NodePort` (default: `30080`)
-- Image and tag managed via `values.yaml`
+- Deploys the app to Kubernetes namespace flask
 
+- Exposes the app via ClusterIP service (internal access only, no external port open)
+
+- Service listens on port 80 inside the cluster and routes to container port 8000
+
+- Docker image repository and tag are managed via values.yaml
 ---
 
 ## 🧠 Deployment Script
