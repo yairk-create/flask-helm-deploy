@@ -12,6 +12,18 @@
 
 set -e
 
+# Check OS
+if ! grep -qiE "debian|ubuntu" /etc/os-release; then
+  printf "\033[0;31mError: This script only supports Debian/Ubuntu systems.\033[0m\n"
+  exit 1
+fi
+
+# Check root
+if [ "$EUID" -ne 0 ]; then
+  printf "Not running as root. Trying to run with sudo...\n"
+  exec sudo "$0" "$@"
+fi
+
 APP_NAME=flask-app
 NAMESPACE=flask
 
@@ -40,7 +52,13 @@ helm upgrade --install $APP_NAME ./helm/$APP_NAME \
   --create-namespace \
   --set image.repository=$DOCKER_USER/$APP_NAME
 
-echo "✅ Deployment complete"
-echo "📦 Namespace: $NAMESPACE"
-echo "🌐 Access your app using port-forward or Ingress (if configured)"
-echo "🔗 Docker Image: $IMAGE"
+printf "\033[0;32m\n✅ Deployment complete\n\033[0m"
+printf "\033[0;32m📦 Namespace: %s\n\033[0m" "$NAMESPACE"
+printf "\033[0;32m🌐 Access your app using port-forward or Ingress (if configured)\n\033[0m"
+printf "\033[0;32m🔗 Docker Image: %s\n\n\033[0m" "$IMAGE"
+printf "\033[0;32m✅ Deployment complete!\n\033[0m"
+printf "\033[0;32mTo access the Flask app from this host, run:\n\033[0m"
+printf "\033[0;32m  kubectl port-forward -n flask svc/flask-app 5000:80\n\033[0m"
+printf "\033[0;32mThen open another terminal and visit or curl:\n\033[0m"
+printf "To reach the app, run:\n"
+printf "\033[0;34m%s\033[0m\n" "curl http://localhost:5000"

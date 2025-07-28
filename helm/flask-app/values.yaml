@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: <your-dockerhub-username>/flask-app
+  repository: nikanuna/flask-app
   pullPolicy: IfNotPresent
   tag: "latest"
 
@@ -15,4 +15,4 @@ resources:
     memory: "750Mi"
   limits:
     cpu: "15m"
-    memory: "750i"
+    memory: "750Mi"
