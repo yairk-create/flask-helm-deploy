@@ -25,9 +25,10 @@ flask-helm/
 ├── LICENSE
 └── README.md               # This file
 ```
-## 📊 Helm Deployment Diagram
 
-![Helm Deployment](https://raw.githubusercontent.com/yairk-create/flask-helm/main/docs/images.png)
+
+![Helm Deployment](https://raw.githubusercontent.com/yairk-create/flask-helm-deploy/main/docs/images.png)
+
 
 ---
 
