@@ -118,11 +118,11 @@ curl http://<your-node-ip>:30080
 ---
 
 ## 🛠️ Prerequisites
-
+-Kubernetes cluster (version 1.19 or later)
 - Docker
 - Kubernetes cluster (e.g., K3s, Minikube)
 - Helm v3+
-- Docker Hub account
+- A GitHub Personal Access Token with read & write:packages scope for accessing the chart from GitHub Container Registry
 
 ---
 
