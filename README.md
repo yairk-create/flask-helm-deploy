@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/yairk-create/flask-helm-deploy/main/docs/images.png" width="200" alt="Helm Logo">
 </p>
 
-<h1 align="center">🚀 Flask App Deployment with Helm & Kubernetes</h1>
+<h1 align="center"> Flask App Deployment with Helm & Kubernetes</h1>
 
 <p align="center">
   <b>Deploy a Flask app to Kubernetes using Docker and Helm</b>
