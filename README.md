@@ -1,16 +1,24 @@
-![Helm Deployment](https://raw.githubusercontent.com/yairk-create/flask-helm-deploy/main/docs/images.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yairk-create/flask-helm-deploy/main/docs/images.png" width="200" alt="Helm Logo">
+</p>
 
+<h1 align="center">🚀 Flask App Deployment with Helm & Kubernetes</h1>
 
+<p align="center">
+  <b>Deploy a Flask app to Kubernetes using Docker and Helm</b>
+</p>
 
-# 🚀 Flask App Deployment with Helm & Kubernetes
+<p align="center">
+  <img src="https://img.shields.io/badge/docker-ready-blue" />
+  <img src="https://img.shields.io/badge/helm-chart-blueviolet" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+</p>
+
+---
 
 This project demonstrates how to package and deploy a simple Flask web app using Docker, Helm, and Kubernetes. It supports NFS volume mounting, namespace isolation, and NodePort service exposure.
 
 ---
-
-
-
-
 
 ## 📁 Project Structure
 
@@ -33,10 +41,6 @@ flask-helm/
 ├── LICENSE
 └── README.md               # This file
 ```
-
-
-
-
 
 ---
 
@@ -90,7 +94,7 @@ chmod +x scripts/deploy.sh
 
 ## 🌐 Access the App
 
-After deployment, open:
+After deployment, open in browser:
 
 ```
 http://<your-node-ip>:30080
@@ -102,7 +106,16 @@ Or port-forward (if using ClusterIP):
 kubectl port-forward -n flask svc/flask-app 5000:80
 ```
 
+---
 
+## 🔍 Demo
+
+```bash
+curl http://<your-node-ip>:30080
+# → Hello from Flask with Helm!
+```
+
+---
 
 ## 🛠️ Prerequisites
 
