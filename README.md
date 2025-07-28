@@ -39,7 +39,9 @@ flask-helm/
 │   └── deploy.sh           # One-click build and deploy script
 ├── .gitignore
 ├── LICENSE
-└── README.md               # This file
+├── docs/
+│ └── image.png # pic
+└── README.md # This file
 ```
 
 ---
