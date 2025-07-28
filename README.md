@@ -25,7 +25,10 @@ flask-helm/
 ├── LICENSE
 └── README.md               # This file
 ```
+## 📊 Helm Deployment Diagram
+
 ![Helm Deployment](https://raw.githubusercontent.com/yairk-create/flask-helm/main/docs/images.png)
+
 ---
 
 ## 🐍 Flask App (`main.py`)
@@ -90,14 +93,7 @@ Or port-forward (if using ClusterIP):
 kubectl port-forward -n flask svc/flask-app 5000:80
 ```
 
----
 
-
-
-
-
-
----
 
 ## 🛠️ Prerequisites
 
