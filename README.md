@@ -111,7 +111,7 @@ kubectl port-forward -n flask svc/flask-app 5000:80
 ## 🔍 Demo
 
 ```bash
-curl http://<your-node-ip>:30080
+curl http://localhost:5000  
 # → Hello from Flask with Helm!
 ```
 
